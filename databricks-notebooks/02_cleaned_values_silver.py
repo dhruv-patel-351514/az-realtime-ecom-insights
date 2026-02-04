@@ -7,9 +7,9 @@ spark.conf.set(
   "<Storage_Account_Access_Key>"
 )
 
-bronze_path = "abfss://ecommerce@ecommercestoragejk.dfs.core.windows.net/bronze"
+bronze_path = "abfss://<container>@<storage_account>.dfs.core.windows.net/bronze"
 
-silver_path = "abfss://ecommerce@ecommercestoragejk.dfs.core.windows.net/silver"
+silver_path = "abfss://<container>@<storage_account>.dfs.core.windows.net/silver"
 
 #Reading raw data from bronze
 df_bronze=(
