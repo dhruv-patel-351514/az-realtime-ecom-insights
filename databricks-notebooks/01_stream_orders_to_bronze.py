@@ -56,7 +56,7 @@ spark.conf.set(
 )
 
 
-bronze_path = "abfss://ecommerce@ecommercestoragejk.dfs.core.windows.net/bronze"
+bronze_path = "abfss://<container>@<storage_account>.dfs.core.windows.net/bronze"
 
 (
     df_orders.writeStream
