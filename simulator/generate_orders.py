@@ -8,9 +8,10 @@ from kafka import KafkaProducer
 fake = Faker()
 
 # Azure Event Hub credentials
-BOOTSTRAP_SERVERS = 'realtime-ecom-namespace.servicebus.windows.net:9093'
-EVENT_HUB_CONNECTION_STRING = 'Endpoint=sb://realtime-ecom-namespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=JZFcUgcJ15K0cAgGu5nmOjvhE5birPcrL+AEhIgZmio='
-EVENT_HUB_NAME = 'ecom-orders'
+BOOTSTRAP_SERVERS = '<<namespace_host_name>>:9093'
+EVENT_HUB_CONNECTION_STRING = '<<namespace_connection_string>>'
+EVENT_HUB_NAME = '<<event_hub_name>>'
+
 
 producer = KafkaProducer(
     bootstrap_servers=BOOTSTRAP_SERVERS,
