@@ -8,9 +8,9 @@ spark.conf.set(
 )
 
 
-gold_path = "abfss://ecommerce@ecommercestoragejk.dfs.core.windows.net/gold"
+gold_path = "abfss://<container>@<storage_account>.dfs.core.windows.net/gold"
 
-silver_path = "abfss://ecommerce@ecommercestoragejk.dfs.core.windows.net/silver"
+silver_path = "abfss://<container>@<storage_account>.dfs.core.windows.net/silver"
 
 #Read from silver
 df_silver=(
